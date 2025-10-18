@@ -1,7 +1,9 @@
 // app.js
 const express = require('express');
 const app = express();
+const cors=require('cors')
 const PORT = 2300 ;
+app.use(cors())
 const indexRouter=require('./Router/index')
 app.use(express.json());
 // Example route (Home)
